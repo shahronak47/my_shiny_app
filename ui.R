@@ -1,6 +1,6 @@
 shinyUI(fluidPage(
   titlePanel(
-    HTML("<b>Ronak Shah</b>")
+    HTML("Ronak Shah")
     ),
   
   sidebarLayout(position = "right",
@@ -17,11 +17,9 @@ shinyUI(fluidPage(
                 mainPanel(
                   img(src = "Ronak.jpg",  height = 200, width = 150), 
                   br() ,br(), 
-                  strong("Background : "), 
-                  br(), br(), 
-                  p("Ronak has been coding in R since 2 years. He has 
-                    done various courses in Data Science mostly from Coursera"), 
-                  br(), br(), 
+                  HTML("<h3>Employment : </h3>"), 
+                  HTML("<strong><h4>Binary.com : Quantitative Analyst </h4></strong>"),
+                  br(), br(),
                   HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
