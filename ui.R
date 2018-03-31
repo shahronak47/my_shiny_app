@@ -17,9 +17,12 @@ shinyUI(fluidPage(
                 mainPanel(
                   img(src = "Ronak.jpg",  height = 200, width = 150), 
                   br() ,br(), 
-                  HTML("<h3>Employment : </h3>"), 
-                  HTML("<strong><h4>Binary.com : Quantitative Analyst </h4></strong>"),
-                  br(), br(),
+                  HTML("<h3>Employment and Job Responsibilities: </h3>"), 
+                  HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
+                  br(),
+                  HTML("<p><ul><li> Building various tools and techniques to monitor live prices. One such tool fetched prices from competitor's website and compared with our prices. Another one was a report 
+                       generation tool which reduced the time from 30 mins everyday to a minute only.</li></p>
+                       <p><li> Adjusting commisions and prices according to the daily economic events worldwide</li></p></ul>"),
                   HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
