@@ -19,10 +19,17 @@ shinyUI(fluidPage(
                   br() ,br(), 
                   HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                   HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
-                  br(),
                   HTML("<p><ul><li> Building various tools and techniques to monitor live prices. One such tool fetched prices from competitor's website and compared with our prices. Another one was a report 
                        generation tool which reduced the time from 30 mins everyday to a minute only.</li></p>
                        <p><li> Adjusting commisions and prices according to the daily economic events worldwide</li></p></ul>"),
+                  br(),
+                  HTML("<strong><h4> SourceHOV : Data Scientist </h4></strong>"),
+                  HTML("<p><ul><li> Legal summarization - Extracting relevant information and summarize the legal judgements..</li></p>
+                       <p><li>Forecasting Power Usage - Using unsupervised learning to divide the customers into different clusters based on their power consumption. </li></p></ul>"),
+                  br(),
+                  HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
+                  HTML("<p><ul><li>.	Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
+                       <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
                   HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
