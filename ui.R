@@ -30,6 +30,9 @@ shinyUI(fluidPage(
                   HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
                   HTML("<p><ul><li>.	Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
                        <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
+          
+                  htmlOutput("answer_url_links"), 
+                  
                   HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
