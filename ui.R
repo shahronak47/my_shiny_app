@@ -34,17 +34,19 @@ shinyUI(fluidPage(
                   HTML("<p><ul><li>.	Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
                        <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
                   #Display SO answers
-                  htmlOutput("answer_url_links"), 
+                  HTML("<a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
+                    <img src='so-icon.png',  height = 50, width = 50></img></a> &ensp;
+                       <font size = '4'><b>Recent SO Answers</b></font>"),
+                  br(),
+                  HTML("&ensp;&ensp;&ensp;"),
+                  htmlOutput("answer_so_links"), 
                   
-                  
-                  HTML("<p>Connect with <b>Ronak </b> :</p>"),
+                  #HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
                        <img src='twitter.png',  height = 50, width = 50></img></a>
                        <a href ='https://facebook.com/shahronak47'>
                        <img src='facebook.png',  height = 50, width = 50></img></a>
-                       <a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
-                       <img src='so-icon.png',  height = 50, width = 50></img></a>
                        <a href ='https://in.linkedin.com/in/shahronak47'>
                        <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
                         <a href ='https://github.com/shahronak47'>

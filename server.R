@@ -8,9 +8,8 @@ shinyServer(function(input, output) {
   answer_url_links <-  paste0("https://stackoverflow.com/a/", head(df$answer_id))
   #text - questions_df$title and url - answer_url_links
   
-  output$answer_url_links <- renderUI({
-    HTML(paste0("<a href= ", answer_url_links, ">", questions_df$title, "</a>"))
+  output$answer_so_links <- renderUI({
+    HTML(paste0("&ensp;&ensp;&ensp;<a href= ", answer_url_links, ">", questions_df$title, "</a>", collapse = "<br/> &ensp;&ensp;"))
   })
-  
 })
 
