@@ -5,14 +5,11 @@ shinyUI(fluidPage(
   
   sidebarLayout(position = "right",
                 sidebarPanel( HTML ("
-                  <h3>Projects Worked </h3>
-                  <br /> <br />
-                  <div style = 'text-align: left;'>
-                  <ul>
-                  <li>Clustering users based on their power usage</li>
-                  <li>Legal Summarization</li>
-                  <li>Movie Business Estimator</li>
-                  <li>Handwritten Script Recognition using Neural Network</li></ul></div>"
+                <a class='twitter-timeline'  href='https://twitter.com/shahronak47' data-widget-id='548718237639122944'>Recent tweets by @shahronak47</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+                                    
+            <a href='https://twitter.com/intent/tweet?screen_name=shahronak47&ref_src=twsrc%5Etfw' class='twitter-mention-button' data-show-count='false'>Tweet to @shahronak47</a>
+            <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
                   )),
                 mainPanel(
                   img(src = "Ronak.jpg",  height = 200, width = 150), 
@@ -44,9 +41,7 @@ shinyUI(fluidPage(
                   ),
                   #HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
-                  HTML("<a href ='https://twitter.com/shahronak47'>
-                       <img src='twitter.png',  height = 50, width = 50></img></a>
-                       <a href ='https://facebook.com/shahronak47'>
+                  HTML("<a href ='https://facebook.com/shahronak47'>
                        <img src='facebook.png',  height = 50, width = 50></img></a>
                        <a href ='https://in.linkedin.com/in/shahronak47'>
                        <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
