@@ -12,4 +12,3 @@ shinyServer(function(input, output) {
     HTML(paste0("&ensp;&ensp;&ensp;<a href= ", answer_url_links, ">", questions_df$title, "</a>", collapse = "<br/> &ensp;&ensp;"))
   })
 })
-

@@ -33,14 +33,15 @@ shinyUI(fluidPage(
                   HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
                   HTML("<p><ul><li>.	Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
                        <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
+                  sidebarPanel(
                   #Display SO answers
                   HTML("<a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
-                    <img src='so-icon.png',  height = 50, width = 50></img></a> &ensp;
+                    <img src='so-icon.png',  height = 40, width = 50></img></a> &ensp;
                        <font size = '4'><b>Recent SO Answers</b></font>"),
                   br(),
                   HTML("&ensp;&ensp;&ensp;"),
-                  htmlOutput("answer_so_links"), 
-                  
+                  htmlOutput("answer_so_links"), width = 6
+                  ),
                   #HTML("<p>Connect with <b>Ronak </b> :</p>"),
                   br(), br(), 
                   HTML("<a href ='https://twitter.com/shahronak47'>
