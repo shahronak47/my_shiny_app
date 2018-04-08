@@ -7,7 +7,7 @@ shinyUI(fluidPage(
                 sidebarPanel( HTML ("
                 <a class='twitter-timeline'  href='https://twitter.com/shahronak47' data-widget-id='548718237639122944'>Recent tweets by @shahronak47</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
-                                    
+                                                 
             <a href='https://twitter.com/intent/tweet?screen_name=shahronak47&ref_src=twsrc%5Etfw' class='twitter-mention-button' data-show-count='false'>Tweet to @shahronak47</a>
             <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
                   )),
@@ -28,7 +28,7 @@ shinyUI(fluidPage(
                   br(),
                   #Employment 3
                   HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
-                  HTML("<p><ul><li>.	Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
+                  HTML("<p><ul><li>. Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
                        <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
                   sidebarPanel(
                   #Display SO answers
@@ -39,7 +39,7 @@ shinyUI(fluidPage(
                   HTML("&ensp;&ensp;&ensp;"),
                   htmlOutput("answer_so_links"), width = 6
                   ),
-                  #HTML("<p>Connect with <b>Ronak </b> :</p>"),
+                  HTML("<p><b>You can also connect with me on other platforms :</b></p>"),
                   br(), br(), 
                   HTML("<a href ='https://facebook.com/shahronak47'>
                        <img src='facebook.png',  height = 50, width = 50></img></a>
@@ -49,6 +49,8 @@ shinyUI(fluidPage(
                        <img src='GitHub-Mark.png',  height = 50, width = 50></img></a>
                         <a href ='https://www.quora.com/profile/Ronak-Shah-96'>
                        <img src='quora_icon.png',  height = 50, width = 50></img></a>
+                        <a href ='https://shahronak47.wordpress.com/blog/'>
+                       <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
                        ")
                   
                 )
