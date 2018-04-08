@@ -11,13 +11,14 @@ shinyUI(fluidPage(
             <a href='https://twitter.com/intent/tweet?screen_name=shahronak47&ref_src=twsrc%5Etfw' class='twitter-mention-button' data-show-count='false'>Tweet to @shahronak47</a>
             <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
                   )),
+                #Employment Details
                 mainPanel(
                   img(src = "Ronak.jpg",  height = 200, width = 150), 
                   br() ,br(), 
                   HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                   #Employment 1
                   HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
-                  HTML("<p><ul><li> Building various tools and techniques to monitor live prices. One such tool fetched prices from competitor's website and compared with our prices. Another one was a report 
+                  HTML("<p><ul><li> Building various tools and techniques to monitor live prices and reporting purposes. One such tool fetched prices from competitor's website and compared with our prices. Another one was a report 
                        generation tool which reduced the time from 30 mins everyday to a minute only.</li></p>
                        <p><li> Adjusting commisions and prices according to the daily economic events worldwide</li></p></ul>"),
                   br(),
@@ -28,8 +29,26 @@ shinyUI(fluidPage(
                   br(),
                   #Employment 3
                   HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
-                  HTML("<p><ul><li>. Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
-                       <p><li> .	Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
+                  HTML("<p><ul><li> Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
+                       <p><li> Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
+                  
+                  #Education Details : 
+                  HTML("<h3>Education: </h3>"), 
+                  HTML("<strong><h4> M.Tech from BITS, Pilani </h4></strong>"),
+                  HTML("<ul>
+                        <li> Duration - August 2015 - May 2017 </li>
+                        <li> 	M.Tech in Software Systems with specialization in Data Analytics. This was a Work Integrated Learning Program (WILP) which was designed especially for working professionals. </li>
+                        <li> CGPA of 7.2 </li>
+                        <li> Coursework included: Artificial Systems, Machine Learning, Data Mining, Data Storage Technology and Network, Database Design and Applications, Information Retrieval, Data structure and Algorithms and Object Oriented Analysis and Design </li> </ul>
+                       "),
+                  br(),
+                  HTML("<strong><h4> B.E from Pune University </h4></strong>"),
+                  HTML("<ul>
+                       <li> Duration - July 2009 - June 2013 </li>
+                       <li> B.E in computer engineering passed with first class.  </li>
+                       <li> Final year project on handwritten script recognition using neural network in Java. </li>
+                       "),
+                  br(),
                   sidebarPanel(
                   #Display SO answers
                   HTML("<a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
