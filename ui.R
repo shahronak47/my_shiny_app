@@ -1,9 +1,8 @@
 shinyUI(fluidPage(
-  titlePanel(
-    HTML("Ronak Shah")
-    ),
+  titlePanel("", "Ronak Shah"),
   
   sidebarLayout(position = "right",
+                #Add twitter timeline and follow button
                 sidebarPanel( HTML ("
                 <a class='twitter-timeline'  href='https://twitter.com/shahronak47' data-widget-id='548718237639122944'>Recent tweets by @shahronak47</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
@@ -13,7 +12,9 @@ shinyUI(fluidPage(
                   )),
                 #Employment Details
                 mainPanel(
-                  img(src = "Ronak.jpg",  height = 200, width = 150), 
+                  div(style="text-align:center;",
+                  p(strong(style="font-size:20px;", "Ronak Shah")),
+                  img(src = "Ronak.jpg",  height = 200, width = 150)), 
                   br() ,br(), 
                   HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                   #Employment 1
