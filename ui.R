@@ -54,10 +54,13 @@ shinyUI(fluidPage(
                   #Display SO answers
                   HTML("<a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
                     <img src='so-icon.png',  height = 40, width = 50></img></a> &ensp;
-                       <font size = '4'><b>Recent SO Answers</b></font>"),
+                    <font size = '4'><b>Recent SO Answers</b></font> &ensp;&ensp;
+                    <a href='https://stackoverflow.com/users/3962914/ronak-shah'>
+                    <img src='https://stackoverflow.com/users/flair/3962914.png' width='208' height='58' alt='profile for Ronak Shah at Stack Overflow.' title='profile for Ronak Shah at Stack Overflow.'>
+                       </a>"),
                   br(),
                   HTML("&ensp;&ensp;&ensp;"),
-                  htmlOutput("answer_so_links"), width = 6
+                  htmlOutput("answer_so_links"), width = 8
                   ),
                   HTML("<p><b>You can also connect with me on other platforms :</b></p>"),
                   br(), br(), 
@@ -72,7 +75,6 @@ shinyUI(fluidPage(
                         <a href ='https://shahronak47.wordpress.com/blog/'>
                        <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
                        ")
-                  
                 )
   )
 ))
