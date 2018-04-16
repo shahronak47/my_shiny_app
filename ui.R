@@ -64,6 +64,16 @@ shinyUI(fluidPage(
                   HTML("&ensp;&ensp;&ensp;"),
                   htmlOutput("answer_so_links"), width = 8
                   ),
+                  #Display Quora answers
+                  sidebarPanel(
+                    #Display SO answers
+                    HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
+                       <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
+                         <font size = '4'><b>Recent Quora Answers</b></font>"),
+                    br(),
+                    HTML("&ensp;&ensp;&ensp;"),
+                    htmlOutput("answer_quora_links"), width = 8
+                    ),
                   HTML("<p><b>You can also connect with me on other platforms :</b></p>"),
                   br(), br(), 
                   HTML("<a href ='https://facebook.com/shahronak47'>
@@ -72,8 +82,6 @@ shinyUI(fluidPage(
                        <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
                         <a href ='https://github.com/shahronak47'>
                        <img src='GitHub-Mark.png',  height = 50, width = 50></img></a>
-                        <a href ='https://www.quora.com/profile/Ronak-Shah-96'>
-                       <img src='quora_icon.png',  height = 50, width = 50></img></a>
                         <a href ='https://shahronak47.wordpress.com/blog/'>
                        <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
                        <a href ='http://shahronak47.tumblr.com/'>
