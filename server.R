@@ -1,6 +1,8 @@
 library(stackr)
 library(rvest)
 library(dplyr)
+library(xml2)
+library(XML)
 shinyServer(function(input, output) {
   #Get top 30 (1 page) answers of user 3962914 (me)
   df <- stack_users(3962914, "answers")
@@ -19,16 +21,17 @@ shinyServer(function(input, output) {
   
   #Get URLs for recent answers
   quora_answer_URLs <- quora_link %>%
-    read_html() %>% 
-    html_nodes("[class='answer_permalink']") %>% 
-    html_attr("href") %>%
-    paste0("https://www.quora.com", .) %>%
-    head()
+          read_html() %>% 
+          html_nodes(xpath = '//*[@class="answer_permalink"]') %>% 
+          html_attr("href") %>%
+          paste0("https://www.quora.com", .) %>%
+          head()
+  
   
   #Get text for questions
   quora_question_text <- quora_link %>%
     read_html() %>% 
-    html_nodes("[class='question_link']") %>% 
+    html_nodes(xpath = '//*[@class="question_link"]') %>% 
     html_text() %>%
     head()
   
