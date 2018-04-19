@@ -11,7 +11,6 @@ sidebar <- dashboardSidebar(
 body <- dashboardBody(
   tabItems(
     tabItem(tabName = "dashboard",
-            #shinyUI(fluidPage(
               titlePanel("", "Ronak Shah"),
               
               sidebarLayout(position = "right",
@@ -104,7 +103,6 @@ body <- dashboardBody(
                    <a href ='http://shahronak47.tumblr.com/'>
                    <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
                    ")
-              #))
             
     ),
     
