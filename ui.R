@@ -2,15 +2,14 @@ library(shinydashboard)
 
 sidebar <- dashboardSidebar(
   sidebarMenu(
-    menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-    menuItem("Widgets", icon = icon("th"), tabName = "widgets",
-             badgeLabel = "new", badgeColor = "green")
+    menuItem("About Me", tabName = "aboutme", icon = icon("adn")),
+    menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects")
   )
 )
 
 body <- dashboardBody(
   tabItems(
-    tabItem(tabName = "dashboard",
+    tabItem(tabName = "aboutme",
               titlePanel("", "Ronak Shah"),
               
               sidebarLayout(position = "right",
@@ -25,7 +24,6 @@ body <- dashboardBody(
                             #Employment Details
                             mainPanel(
                               div(style="text-align:center;",
-                                  p(strong(style="font-size:20px;", "Ronak Shah")),
                                   img(src = "Ronak.jpg",  height = 200, width = 150)), 
                               br() ,br(), 
                               HTML("<h3>Employment and Job Responsibilities: </h3>"), 
@@ -106,15 +104,20 @@ body <- dashboardBody(
             
     ),
     
-    tabItem(tabName = "widgets",
-            h2("Coming soon")
+    tabItem(tabName = "SideProjects",
+            h2("Twitter Bots"),
+            HTML("<ul>
+                  <li> <a href = 'https://twitter.com/rstatsbot1234'>@rstatsbot1234</a> retweets tweets from #rstats </li>
+                 <li> <a href = 'https://twitter.com/wakeupwithsmile'>@wakeupwithsmile</a>  wishes good morning to random people.</li>
+                </ul>
+                 ")
     )
   )
 )
 
 # Put them together into a dashboardPage
 dashboardPage(
-  dashboardHeader(title = "Simple tabs"),
+  dashboardHeader(title = "Ronak Shah"),
   sidebar,
   body
 )
