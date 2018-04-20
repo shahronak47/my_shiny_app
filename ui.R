@@ -105,12 +105,32 @@ body <- dashboardBody(
     ),
     
     tabItem(tabName = "SideProjects",
+            h2("bsetools"),
+            HTML("<ul>
+                  <li>A python package which gives live stock prices from Bombay Stock Exchange. </li>
+                  <li> The package was released to <a href= 'https://pypi.org/project/bsetools/'>PyPI</a> and the code is hosted on <a href = 'https://github.com/shahronak47/bsetools'> GitHub </a> </li>
+                  </ul>
+                   "),
+            h2("bsedata"), 
+            HTML("<ul>
+                  <li> This was made on top of bsetools. This project uses bsetools get stock prices of stocks mentioned in csv. </li>
+                   <li> It then generate a nice table showing current profit/loss on that particular stock and sends daily email to my email address. </li>
+                   <li> The code for the same is also hosted on <a href = 'https://github.com/shahronak47/bsedata'> Github </a> </li>
+                 </ul>
+                 "),
             h2("Twitter Bots"),
             HTML("<ul>
                   <li> <a href = 'https://twitter.com/rstatsbot1234'>@rstatsbot1234</a> retweets tweets from #rstats </li>
                  <li> <a href = 'https://twitter.com/wakeupwithsmile'>@wakeupwithsmile</a>  wishes good morning to random people.</li>
+                  <li> Code for both the bots can be found on <a href = 'https://github.com/shahronak47/TwitterBot'> Github </a> </li>
                 </ul>
-                 ")
+                 "),
+            h2("Project Euler"),
+            HTML("<ul>
+                 <li> I like solving competitve and challenging problems. I have solved around 50+ <a href = 'https://projecteuler.net/'>Project Euler</a> problems </li>
+                 <li>I have also written blog posts for each problem solved describing how I approached the problem, what were the difficulties I faced and how I arrived at the soluton . </li>
+                <li> The code for all the Project Euler problem <a href = 'https://github.com/shahronak47/Project-Euler'>you know from where to get on</a> ;-) </li>
+                 </ul>")
     )
   )
 )
