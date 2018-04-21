@@ -3,6 +3,7 @@ library(shinydashboard)
 sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("About Me", tabName = "aboutme", icon = icon("adn")),
+    menuItem("Resume", icon = icon("file"), tabName = "Resume"),
     menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects")
   )
 )
@@ -10,6 +11,13 @@ sidebar <- dashboardSidebar(
 body <- dashboardBody(
   tabItems(
     tabItem(tabName = "aboutme",
+            div(style="text-align:center;",
+                img(src = "Ronak.jpg",  height = 200, width = 150)), 
+            br() ,br(),
+            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, I am Ronak Shah. Currently I am working as Quantitative Analyst at Binary.com. I have completed my master from BITS,Pilani</p>
+            <p>I love numbers, being fit. I like to work on problems which would have impact and improves daily life.</p></div>")
+    ),
+    tabItem(tabName = "Resume",
               titlePanel("", "Ronak Shah"),
               
               sidebarLayout(position = "right",
@@ -23,9 +31,6 @@ body <- dashboardBody(
                             )),
                             #Employment Details
                             mainPanel(
-                              div(style="text-align:center;",
-                                  img(src = "Ronak.jpg",  height = 200, width = 150)), 
-                              br() ,br(), 
                               HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                               #Employment 1
                               HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
@@ -50,7 +55,7 @@ body <- dashboardBody(
                                    <li> Duration - August 2015 - May 2017 </li>
                                    <li> 	M.Tech in Software Systems with specialization in Data Analytics. This was a Work Integrated Learning Program (WILP) which was designed especially for working professionals. </li>
                                    <li> CGPA of 7.2 </li>
-                                   <li> Coursework included: Artificial Systems, Machine Learning, Data Mining, Data Storage Technology and Network, Database Design and Applications, Information Retrieval, Data structure and Algorithms and Object Oriented Analysis and Design </li> </ul>
+                                   <li> Coursework included: Artificial Systems, Machine Learning, Data Mining, Data Storage Technology and Network, Database Design and Applications, Information Retrieval, Data structure and Algorithms and Object Oriented Analysis and Design. </li> </ul>
                                    "),
                               br(),
                               HTML("<strong><h4> B.E from Pune University </h4></strong>"),
