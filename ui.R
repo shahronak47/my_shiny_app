@@ -4,7 +4,8 @@ sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("About Me", tabName = "aboutme", icon = icon("adn")),
     menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects"),
-    menuItem("Resume", icon = icon("file"), tabName = "Resume")
+    menuItem("Resume", icon = icon("file"), tabName = "Resume"),
+    menuItem("Contact Me", icon = icon("phone"), tabName = "ContactMe")
   )
 )
 
@@ -96,21 +97,7 @@ body <- dashboardBody(
                 br(),
                 HTML("&ensp;&ensp;&ensp;"),
                 htmlOutput("answer_quora_links"), width = 6
-                ),
-              div(style="text-align:left;",
-              HTML("<b>You can also connect with me on other platforms :</b>"),
-              HTML("<a href ='https://facebook.com/shahronak47'>
-                   <img src='facebook.png',  height = 50, width = 50></img></a>
-                   <a href ='https://in.linkedin.com/in/shahronak47'>
-                   <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
-                   <a href ='https://github.com/shahronak47'>
-                   <img src='GitHub-Mark.png',  height = 50, width = 50></img></a>
-                   <a href ='https://shahronak47.wordpress.com/blog/'>
-                   <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
-                   <a href ='http://shahronak47.tumblr.com/'>
-                   <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
-                   ")
-              )
+                )
             
     ),
     
@@ -141,6 +128,23 @@ body <- dashboardBody(
                  <li>I have also written blog posts for each problem solved describing how I approached the problem, what were the difficulties I faced and how I arrived at the soluton . </li>
                 <li> The code for all the Project Euler problem <a href = 'https://github.com/shahronak47/Project-Euler'>you know from where to get on</a> ;-) </li>
                  </ul>")
+    ), 
+    
+    tabItem(tabName = "ContactMe",
+            br(), br(),
+            HTML("<b>You can also connect with me on other platforms :</b>"),
+            HTML("<a href ='https://facebook.com/shahronak47'>
+                 <img src='facebook.png',  height = 50, width = 50></img></a>
+                 <a href ='https://in.linkedin.com/in/shahronak47'>
+                 <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
+                 <a href ='https://github.com/shahronak47'>
+                 <img src='GitHub-Mark.png',  height = 50, width = 50></img></a>
+                 <a href ='https://shahronak47.wordpress.com/blog/'>
+                 <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
+                 <a href ='http://shahronak47.tumblr.com/'>
+                 <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
+                 ")
+            
     )
   )
 )
