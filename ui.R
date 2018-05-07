@@ -28,7 +28,7 @@ body <- dashboardBody(
                                 img(src = "Ronak.jpg",  height = 200, width = 150)), 
                             br() ,br(),
                             HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, I am Ronak Shah. Currently I am working as Quantitative Analyst at Binary.com. I have completed my master from BITS,Pilani</p>
-                                 <p>I love numbers, being fit. I like to work on problems which would have impact and improves daily life.</p></div>"),
+                                 <p>I love numbers. I like to work on problems which would have impact and improves daily life.</p></div>"),
                             
                             br()
                             )
@@ -41,9 +41,8 @@ body <- dashboardBody(
                           HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                           #Employment 1
                           HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
-                          HTML("<p><ul><li> Building various tools and techniques to monitor live prices and reporting purposes. One such tool fetched prices from competitor's website and compared with our prices. Another one was a report 
-                               generation tool which reduced the time from 30 mins everyday to a minute only.</li></p>
-                               <p><li> Adjusting commisions and prices according to the daily economic events worldwide</li></p></ul>"),
+                          HTML("<p><ul><li> Building various pricing models to price different contracts. Suggesting various modification in the current models as well.</li></p>
+                               <p><li> Building various tools which help quants to better analyze prices and handle risk. </li></p></ul>"),
                           br(),
                           #Employment 2
                           HTML("<strong><h4> SourceHOV : Data Scientist </h4></strong>"),
@@ -102,6 +101,9 @@ body <- dashboardBody(
     ),
     
     tabItem(tabName = "SideProjects",
+            br(), br(),
+            p("In my free time I work on projects which help improve my skill and make my life easier. This website is result of one such side project. 
+              Below are the list of some of my personal projects that I have worked on."),
             h2("bsetools"),
             HTML("<ul>
                   <li>A python package which gives live stock prices from Bombay Stock Exchange. </li>
@@ -131,17 +133,53 @@ body <- dashboardBody(
     ), 
     
     tabItem(tabName = "ContactMe",
-            br(), br(),
-            HTML("<b>You can also connect with me on other platforms :</b>"),
+            sidebarPanel(
+              HTML("<font size = '4'><b>Recent technical blogs </b></font>  &ensp;&ensp;&ensp;
+                    <a href ='https://shahronak47.wordpress.com/blog/'>
+                   <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
+              <br />
+              <ul>
+              <li><a href = 'https://shahronak47.wordpress.com/2018/04/26/what-data-does-linkedin-collect-part-2/'> What data does LinkedIn collect - Part 2 </a></li><br/>
+              <li><a href = 'https://shahronak47.wordpress.com/2018/04/23/what-data-does-linkedin-collect-part-i/'> What data does LinkedIn collect - Part 1 </a></li><br/>
+              <li><a href = 'https://shahronak47.wordpress.com/2018/04/12/what-am-i-working-on-recently/'> What am I working on recently? </a></li><br/>
+              <li><a href = 'https://shahronak47.wordpress.com/2018/04/01/euler-problem-58-spiral-primes/'> Euler Problem 58 - Spiral Primes </a></li><br/>
+              <li><a href = 'https://shahronak47.wordpress.com/2018/03/21/euler-problem-57-square-root-convergents/'> Euler Problem 57 - Square Root convergents </a></li><br/>
+              </ul>
+             "),  width = 6
+              ),
+              
+            sidebarPanel(
+              HTML("<font size = '4'><b>Few personal blogs </b></font>  &ensp;&ensp;&ensp;
+                  <a href ='http://shahronak47.tumblr.com/'>
+                 <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
+                   <br />
+                   <ul>
+                   <li><a href = 'http://shahronak47.tumblr.com/post/173601627149/singapore-trip-final-part'> Singapore Trip - Final part</a></li><br/>
+                   <li><a href = 'http://shahronak47.tumblr.com/post/100832133989/i-miss-the-old-days'> I miss the old days. </a></li><br/>
+                   <li><a href = 'http://shahronak47.tumblr.com/post/96247905664/when-will-i-stop'>When will I stop? </a></li><br/>
+                   <li><a href = 'http://shahronak47.tumblr.com/post/84077293518/power-of-one'> Power of ONE </a></li><br/>
+                   <li><a href = 'http://shahronak47.tumblr.com/post/86848318494/appreciate-its-free-of-cost'> Appreciate - its free of cost </a></li><br/>
+                   </ul>
+                   "),  width = 6
+              ),
+            
+         
+            HTML("<b>Web presence :</b>"),
             HTML("<a href ='https://facebook.com/shahronak47'>
                  <img src='facebook.png',  height = 50, width = 50></img></a>
+                  <a href ='https://twitter.com/shahronak47'>
+                 <img src='twitter.png',  height = 50, width = 50></img></a>
                  <a href ='https://in.linkedin.com/in/shahronak47'>
                  <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
                  <a href ='https://github.com/shahronak47'>
                  <img src='GitHub-Mark.png',  height = 50, width = 50></img></a>
+                 <a href ='https://www.quora.com/profile/Ronak-Shah-96'>
+                 <img src='quora_icon.png',  height = 50, width = 50></img></a>
+                 <a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
+                 <img src='so-icon.png',  height = 40, width = 50></img></a>
                  <a href ='https://shahronak47.wordpress.com/blog/'>
-                 <img src='wordpress_logo.png',  height = 50, width = 50></img></a>
-                 <a href ='http://shahronak47.tumblr.com/'>
+                  <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
+                  <a href ='http://shahronak47.tumblr.com/'>
                  <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
                  ")
             
