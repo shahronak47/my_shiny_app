@@ -70,33 +70,8 @@ body <- dashboardBody(
                                <li> B.E in computer engineering passed with first class.  </li>
                                <li> Final year project on handwritten script recognition using neural network in Java. </li>
                                "),
-                          br(),
-                          #),
-              
-              
-              sidebarPanel(
-                #Display SO answers
-                HTML("<div  style =  'text-align: center'><a href='https://stackoverflow.com/users/3962914/ronak-shah'>
-                     <img src='https://stackoverflow.com/users/flair/3962914.png' width='208' height='58' alt='profile for Ronak Shah at Stack Overflow.' title='profile for Ronak Shah at Stack Overflow.'></a></div>
-                     <br />
-                     <a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
-                     <img src='so-icon.png',  height = 40, width = 50></img></a> &ensp;
-                     <font size = '4'><b>Recent Stack Overflow Answers</b></font>
-                     
-                     "),
-                br(),
-                HTML("&ensp;&ensp;&ensp;"),
-                htmlOutput("answer_so_links"), width = 6  
-                ),
-              #Display Quora answers
-              sidebarPanel(
-                HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
-                     <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
-                     <font size = '4'><b>Recent Quora Answers</b></font>"),
-                br(),
-                HTML("&ensp;&ensp;&ensp;"),
-                htmlOutput("answer_quora_links"), width = 6
-                )
+                          br()
+             
             
     ),
     
@@ -129,7 +104,33 @@ body <- dashboardBody(
                  <li> I like solving competitve and challenging problems. I have solved around 50+ <a href = 'https://projecteuler.net/'>Project Euler</a> problems </li>
                  <li>I have also written blog posts for each problem solved describing how I approached the problem, what were the difficulties I faced and how I arrived at the soluton . </li>
                 <li> The code for all the Project Euler problem <a href = 'https://github.com/shahronak47/Project-Euler'>you know from where to get on</a> ;-) </li>
-                 </ul>")
+                 </ul>"), 
+            
+            
+            br(), br(),
+            sidebarPanel(
+              #Display SO answers
+              HTML("<div  style =  'text-align: center'><a href='https://stackoverflow.com/users/3962914/ronak-shah'>
+                   <img src='https://stackoverflow.com/users/flair/3962914.png' width='208' height='58' alt='profile for Ronak Shah at Stack Overflow.' title='profile for Ronak Shah at Stack Overflow.'></a></div>
+                   <br />
+                   <a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
+                   <img src='so-icon.png',  height = 40, width = 50></img></a> &ensp;
+                   <font size = '4'><b>Recent Stack Overflow Answers</b></font>
+                   
+                   "),
+              br(),
+              HTML("&ensp;&ensp;&ensp;"),
+              htmlOutput("answer_so_links"), width = 6  
+              ),
+            #Display Quora answers
+            sidebarPanel(
+              HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
+                   <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
+                   <font size = '4'><b>Recent Quora Answers</b></font>"),
+              br(),
+              HTML("&ensp;&ensp;&ensp;"),
+              htmlOutput("answer_quora_links"), width = 6
+              )
     ), 
     
     tabItem(tabName = "ContactMe",
