@@ -5,6 +5,7 @@ sidebar <- dashboardSidebar(
     menuItem("About Me", tabName = "aboutme", icon = icon("adn")),
     menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects"),
     menuItem("Resume", icon = icon("file"), tabName = "Resume"),
+    menuItem("Other Projects", icon = icon("umbrella"), tabName = "OtherProjects"),
     menuItem("Contact Me", icon = icon("phone"), tabName = "ContactMe")
   )
 )
@@ -64,7 +65,7 @@ body <- dashboardBody(
                           #Employment 1
                           HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
                           HTML("<p><ul><li> Building various pricing models to price different contracts. Suggesting various modification in the current models as well.</li></p>
-                               <p><li> Building various tools which help quants to better analyze prices and handle risk. </li></p></ul>"),
+                               <p><li> Building various tools which help quants to better analyze prices, handle risk and for better reporting. </li></p></ul>"),
                           br(),
                           #Employment 2
                           HTML("<strong><h4> SourceHOV : Data Scientist </h4></strong>"),
@@ -128,7 +129,15 @@ body <- dashboardBody(
                 <li> The code for all the Project Euler problem <a href = 'https://github.com/shahronak47/Project-Euler'>you know from where to get on</a> ;-) </li>
                  </ul>")
     ), 
-    
+    tabItem(tabName = "OtherProjects",
+              p("I have worked on few random projects as well"),
+            h2("Fetch tweets and display it on a static site using blogdown"),
+            HTML("<ul>
+                 <li> In this project we fetched the tweets with images and display it on a static site on blogdown</li>
+                 <li>The site was deployed on Netlify using continuous integration with Github. </li>
+                <li> More details of the project can be found in <a href = 'https://shahronak47.wordpress.com/2018/07/12/fetch-tweets-and-display-it-on-static-site/'>my blog</a></li>
+                 ")
+    ),
     tabItem(tabName = "ContactMe",
             sidebarPanel(
               HTML("<font size = '4'><b>Recent technical blogs </b></font>  &ensp;&ensp;&ensp;
