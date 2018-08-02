@@ -135,7 +135,15 @@ body <- dashboardBody(
             HTML("<ul>
                  <li> In this project we fetched the tweets with images and display it on a static site on blogdown</li>
                  <li>The site was deployed on Netlify using continuous integration with Github. </li>
-                <li> More details of the project can be found in <a href = 'https://shahronak47.wordpress.com/2018/07/12/fetch-tweets-and-display-it-on-static-site/'>my blog</a></li>
+                <li> More details of the project can be found on <a href = 'https://shahronak47.wordpress.com/2018/07/12/fetch-tweets-and-display-it-on-static-site/'>my blog</a></li>
+              </ul>
+                 "), 
+            h2("Scrape prices from table on NSE website"),
+            HTML("<ul>
+                 <li>Prices for 220 stocks were scraped from NSE website. All the URL's were different for those 220 stocks and were generated on the fly.</li>
+                 <li>Lot of data cleaning and processing was done to extract relevant data.</li>
+                 <li>More details can be found on <a href = 'https://shahronak47.wordpress.com/2018/07/29/scrape-option-prices-from-nse-website/'>my blog</a></li>
+                  </ul>
                  ")
     ),
     tabItem(tabName = "ContactMe",
