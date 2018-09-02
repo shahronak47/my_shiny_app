@@ -100,7 +100,7 @@ I truly believe one should be passionate about what they are working on, it help
     ),
     
     tabItem(tabName = "SideProjects",
-            br(), br(),
+            br(),
             p("In my free time I work on projects which help improve my skill and make my life easier. This website is result of one such side project. 
               Below are the list of some of my personal projects that I have worked on."),
             h2("bsetools"),
@@ -114,6 +114,13 @@ I truly believe one should be passionate about what they are working on, it help
                   <li> This was made on top of bsetools. This project uses bsetools get stock prices of stocks mentioned in csv. </li>
                    <li> It then generate a nice table showing current profit/loss on that particular stock and sends daily email to my email address. </li>
                    <li> The code for the same is also hosted on <a href = 'https://github.com/shahronak47/bsedata'> Github </a> </li>
+                 </ul>
+                 "),
+            h2("YouTube Videos"), 
+            HTML("<ul>
+                 <li> I realised that R is a little difficult for beginners to get hold of. </li>
+                 <li> To help them I started making <a href = 'https://www.youtube.com/shahronak47'> YouTube videos </a>explaining some basic functions and concepts in R. </li>
+                 <li> While doing that it helped me as well to revisit the old concepts in more depth and helped me in my understanding of the language.</li>
                  </ul>
                  "),
             h2("Twitter Bots"),
@@ -192,6 +199,8 @@ I truly believe one should be passionate about what they are working on, it help
                  <img src='quora_icon.png',  height = 50, width = 50></img></a>
                  <a href ='https://stackoverflow.com/users/3962914/ronak-shah'>
                  <img src='so-icon.png',  height = 40, width = 50></img></a>
+                <a href ='https://www.youtube.com/shahronak47'>
+                 <img src='youTube.png',  height = 40, width = 50></img></a>
                  <a href ='https://shahronak47.wordpress.com/blog/'>
                   <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
                   <a href ='http://shahronak47.tumblr.com/'>
