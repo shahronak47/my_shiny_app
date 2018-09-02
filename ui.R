@@ -4,7 +4,7 @@ sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("About Me", tabName = "aboutme", icon = icon("adn")),
     menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects"),
-    menuItem("Resume", icon = icon("file"), tabName = "Resume"),
+    menuItem("Employment and Education", icon = icon("file"), tabName = "EmploymentandEducation"),
     menuItem("Other Projects", icon = icon("umbrella"), tabName = "OtherProjects"),
     menuItem("Contact Me", icon = icon("phone"), tabName = "ContactMe")
   )
@@ -59,24 +59,27 @@ I truly believe one should be passionate about what they are working on, it help
                           )
                           
     ),
-    tabItem(tabName = "Resume",
+    tabItem(tabName = "EmploymentandEducation",
                         #Employment Details
                         #mainPanel(
                           HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                           #Employment 1
                           HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
-                          HTML("<p><ul><li> Building various pricing models to price different contracts. Suggesting various modification in the current models as well.</li></p>
-                               <p><li> Building various tools which help quants to better analyze prices, handle risk and for better reporting. </li></p></ul>"),
+                          HTML("<p><ul><li> Duration : May 2017 - Present </li>
+<li> Building various pricing models to price different contracts. Suggesting various modification in the current models as well.</li>
+                               <li> Building various tools which help quants to better analyze prices, handle risk and for better reporting. </li></p></ul>"),
                           br(),
                           #Employment 2
                           HTML("<strong><h4> SourceHOV : Data Scientist </h4></strong>"),
-                          HTML("<p><ul><li> Legal summarization - Extracting relevant information and summarize the legal judgements..</li></p>
-                               <p><li>Forecasting Power Usage - Using unsupervised learning to divide the customers into different clusters based on their power consumption. </li></p></ul>"),
+                          HTML("<p><ul><li> Duration : July 2016 - Mar 2017 </li>
+<li> Legal summarization - Extracting relevant information and summarize the legal judgements..</li>
+                               <li>Forecasting Power Usage - Using unsupervised learning to divide the customers into different clusters based on their power consumption. </li></p></ul>"),
                           br(),
                           #Employment 3
                           HTML("<strong><h4> Silicus Technologies : Software Engineer </h4></strong>"),
-                          HTML("<p><ul><li> Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li></p>
-                               <p><li> Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
+                          HTML("<p><ul> <li> Duration : July 2014 - June 2016 </li>
+<li> Worked in building a web application using different web technologies, handling the front end as well as backend. Used various languages/web technologies/frameworks including JavaScript, C#, jQuery, angularJS, .NET, SQL etc.</li>
+                               <li> Wrote unit tests, handled various server side and client-side validations as well. </li></p></ul>"),
                           
                           #Education Details : 
                           HTML("<h3>Education: </h3>"), 
