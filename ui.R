@@ -28,8 +28,9 @@ body <- dashboardBody(
                             div(style="text-align:center;",
                                 img(src = "Ronak.jpg",  height = 200, width = 150)), 
                             br() ,br(),
-                            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, I am Ronak Shah. Currently I am working as Quantitative Analyst at Binary.com.</p>
-                                 <p>I love numbers. I like to work on problems which would impact lives and makes it simpler.</p></div>"),
+                            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, I am Ronak Shah. Currently I am working as Quantitative Analyst at Binary.com. I have completed my bachelors from Pune University and my masters from BITS PILANI.
+I truly believe one should be passionate about what they are working on, it helps to achieve some amazing results. I have worked with R and Python the most, although I am quick learner and learn new things fast.</p>
+                                 <p>I love numbers. I like to work on problems which would impact lives and makes it simpler. I try to contribute on various platforms based on my experience (if any), hoping that it might help somebody someday. Apart from this, I love gardening and listening to music.</p></div>"),
                             
                             br(),
                             sidebarPanel(
