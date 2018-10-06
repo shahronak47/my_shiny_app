@@ -14,7 +14,7 @@ shinyServer(function(input, output) {
   #text - questions_df$title and url - answer_url_links
   
   output$answer_so_links <- renderUI({
-    HTML(c("<ul>",paste0("<li><a href= ", answer_url_links, ">", questions_df$title, "</a>", "</li>"), "</ul>"))
+    HTML(c("<ul>",paste0("<li><a href= ", answer_url_links, ">", questions_df$title, "</a></li>"), "</ul>"))
   })
   
   #Add quora link to extract recent answers
@@ -37,7 +37,7 @@ shinyServer(function(input, output) {
     head()
   
   output$answer_quora_links <- renderUI({
-    HTML(c("<ul>",paste0("<li><a href= ", quora_answer_URLs, ">", quora_question_text, "</a>", "</li>"), "</ul>"))
+    HTML(c("<ul>",paste0("<li><a href= ", quora_answer_URLs, ">", quora_question_text, "</a></li>"), "</ul>"))
   })
   
   #Get wordpress blog link
@@ -48,17 +48,18 @@ shinyServer(function(input, output) {
       html_nodes("h2.entry-title") %>%
       html_text() %>%
       head() %>%
-      encodeString() %>%
+      encodeString() %>% #Remove the specific encoding 
       gsub("\\u00a0", " ", .)
   
   wordpress_url <- wordpress_link %>%
     read_html() %>%
     html_nodes("h2.entry-title a") %>%
     html_attr("href") %>%
-    head()
+    head() %>% #Remove the last "/" in the URL 
+    sub("\\/$", "", .)
   
   output$answer_wordpress_links <- renderUI({
-    HTML(c("<ul>",paste0("<li><a href= ", wordpress_url, ">", wordpress_title, "</a>", "</li>"), "</ul>"))
+    HTML(c("<ul>",paste0("<li><a href= ", wordpress_url, ">", wordpress_title, "</a></li>"), "</ul>"))
   })
   
 })

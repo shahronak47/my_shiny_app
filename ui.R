@@ -159,10 +159,11 @@ I truly believe one should be passionate about what they are working on, it help
     ),
     tabItem(tabName = "ContactMe",
             sidebarPanel(
-              HTML("<font size = '4'><b>Recent technical blogs </b></font>  &ensp;&ensp;&ensp;
+              HTML("<font size = '4'><b>Recent technical blogs </b></font>
                     <a href ='https://shahronak47.wordpress.com/blog/'>
                    <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
                    "),
+              br(),
               HTML("&ensp;&ensp;&ensp;"),
               htmlOutput("answer_wordpress_links"),  width = 6
               ),
