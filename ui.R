@@ -162,15 +162,9 @@ I truly believe one should be passionate about what they are working on, it help
               HTML("<font size = '4'><b>Recent technical blogs </b></font>  &ensp;&ensp;&ensp;
                     <a href ='https://shahronak47.wordpress.com/blog/'>
                    <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
-              <br />
-              <ul>
-              <li><a href = 'https://shahronak47.wordpress.com/2018/04/26/what-data-does-linkedin-collect-part-2/'> What data does LinkedIn collect - Part 2 </a></li><br/>
-              <li><a href = 'https://shahronak47.wordpress.com/2018/04/23/what-data-does-linkedin-collect-part-i/'> What data does LinkedIn collect - Part 1 </a></li><br/>
-              <li><a href = 'https://shahronak47.wordpress.com/2018/04/12/what-am-i-working-on-recently/'> What am I working on recently? </a></li><br/>
-              <li><a href = 'https://shahronak47.wordpress.com/2018/04/01/euler-problem-58-spiral-primes/'> Euler Problem 58 - Spiral Primes </a></li><br/>
-              <li><a href = 'https://shahronak47.wordpress.com/2018/03/21/euler-problem-57-square-root-convergents/'> Euler Problem 57 - Square Root convergents </a></li><br/>
-              </ul>
-             "),  width = 6
+                   "),
+              HTML("&ensp;&ensp;&ensp;"),
+              htmlOutput("answer_wordpress_links"),  width = 6
               ),
               
             sidebarPanel(
