@@ -171,16 +171,9 @@ I truly believe one should be passionate about what they are working on, it help
             sidebarPanel(
               HTML("<font size = '4'><b>Few personal blogs </b></font>  &ensp;&ensp;&ensp;
                   <a href ='http://shahronak47.tumblr.com/'>
-                 <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
-                   <br />
-                   <ul>
-                   <li><a href = 'http://shahronak47.tumblr.com/post/173601627149/singapore-trip-final-part'> Singapore Trip - Final part</a></li><br/>
-                   <li><a href = 'http://shahronak47.tumblr.com/post/100832133989/i-miss-the-old-days'> I miss the old days. </a></li><br/>
-                   <li><a href = 'http://shahronak47.tumblr.com/post/96247905664/when-will-i-stop'>When will I stop? </a></li><br/>
-                   <li><a href = 'http://shahronak47.tumblr.com/post/84077293518/power-of-one'> Power of ONE </a></li><br/>
-                   <li><a href = 'http://shahronak47.tumblr.com/post/86848318494/appreciate-its-free-of-cost'> Appreciate - its free of cost </a></li><br/>
-                   </ul>
-                   "),  width = 6
+                 <img src='tumblr-logo.png',  height = 50, width = 50></img></a>"),
+              htmlOutput("answer_tumblr_links"),
+                width = 6
               ),
             
          

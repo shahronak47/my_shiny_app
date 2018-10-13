@@ -62,4 +62,27 @@ shinyServer(function(input, output) {
     HTML(c("<ul>",paste0("<li><a href= ", wordpress_url, ">", wordpress_title, "</a></li>"), "</ul>"))
   })
   
+  
+  #Get tumblr posts
+  tumblr_link <- "http://shahronak47.tumblr.com/"
+  
+  tumblr_title <- tumblr_link %>%
+    read_html() %>%
+    html_nodes("section h2 a") %>%
+    html_text() %>%
+    head()
+  
+  
+  tumblr_url <- tumblr_link %>%
+    read_html() %>%
+    html_nodes("section h2 a") %>%
+    html_attr("href") %>%
+    head()
+  
+  
+  
+  output$answer_tumblr_links <- renderUI({
+    HTML(c("<ul>",paste0("<li><a href= ", tumblr_url, ">", tumblr_title, "</a></li>"), "</ul>"))
+  })
+  
 })
