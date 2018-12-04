@@ -126,11 +126,12 @@ I truly believe one should be passionate about what they are working on, it help
                  <li> While doing that it helped me as well to revisit the old concepts in more depth and helped me in my understanding of the language.</li>
                  </ul>
                  "),
-            h2("Twitter Bots"),
+            h2("Bots"),
             HTML("<ul>
                   <li> <a href = 'https://twitter.com/rstatsbot1234'>@rstatsbot1234</a> retweets tweets from #rstats </li>
                  <li> <a href = 'https://twitter.com/wakeupwithsmile'>@wakeupwithsmile</a>  wishes good morning to random people.</li>
                   <li> Code for both the bots can be found on <a href = 'https://github.com/shahronak47/TwitterBot'> Github </a> </li>
+                  <li> I had also created a messenger bot which answer questions about me. <a href = 'https://github.com/shahronak47/MessengerBot'> Code </a> and <a href = 'https://shahronak47.wordpress.com/2018/11/22/a-bot-that-answers-questions-about-me/'> blog </a> can be found online .</li>
                 </ul>
                  "),
             h2("Project Euler"),
