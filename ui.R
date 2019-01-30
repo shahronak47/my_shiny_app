@@ -197,8 +197,27 @@ I truly believe one should be passionate about what they are working on, it help
                   <img src='wordpress_logo.png',  height = 30, width = 30></img></a>
                   <a href ='http://shahronak47.tumblr.com/'>
                  <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
-                 ")
+                 "),
+              br(), br(),
             
+            
+            #Add contact me form
+            withTags(
+              div(
+                h5(b("Email  *")), 
+                textarea(style = "width: 250px; height: 50px")
+              )
+            ), 
+            
+            withTags(
+              div(
+                h5(b("Message")), 
+                textarea(style = "width: 600px; height: 234px")
+              )
+            ),
+            
+          actionButton("SendButton", "Send", width = "100px")
+
     )
   )
 )
