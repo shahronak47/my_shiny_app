@@ -28,9 +28,10 @@ body <- dashboardBody(
                             div(style="text-align:center;",
                                 img(src = "Ronak.jpg",  height = 200, width = 150)), 
                             br() ,br(),
-                            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, I am Ronak Shah. Currently I am working as Quantitative Analyst at Binary.com. I have completed my bachelors from Pune University and my masters from BITS PILANI.
-I truly believe one should be passionate about what they are working on, it helps to achieve some amazing results. I have worked with R and Python the most. I am quick learner and learn new things fast.</p>
-                                 <p>I love numbers. I like to work on problems which would impact lives and makes it simpler. I try to contribute on various platforms based on my experience (if any), hoping that it might help somebody someday. Apart from this, I love gardening and listening to music.</p></div>"),
+                            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, My name is Ronak. I am from Pune, India. I enjoy coding especially in R. I am currently working as freelancer and I’m always looking for cool #rstats project to be part of. I have answered more than 8000 questions on stack overflow. 
+
+                                 <br/><br/>I’m married and my hobbies include gardening, listening to podcasts and reading books.
+                                 </p></div>"),
                             
                             br(),
                             sidebarPanel(
@@ -66,9 +67,11 @@ I truly believe one should be passionate about what they are working on, it help
                           HTML("<h3>Employment and Job Responsibilities: </h3>"), 
                           #Employment 1
                           HTML("<strong><h4> Binary.com : Quantitative Analyst </h4></strong>"),
-                          HTML("<p><ul><li> Duration : May 2017 - Present </li>
+                          HTML("<p><ul><li> Duration : May 2017 - Oct 2020 </li>
 <li> Building various pricing models to price different contracts. Suggesting various modification in the current models as well.</li>
-                               <li> Building various tools which help quants to better analyze prices, handle risk and for better reporting. </li></p></ul>"),
+                               <li> Building innovative and exclusive products for our clients. Verifying they are mathematically correct without any possibility of exploit.</li>
+                              <li>Building dashboards to monitor various KPI's. (Key performace indicators)
+                               </p></ul>"),
                           br(),
                           #Employment 2
                           HTML("<strong><h4> SourceHOV : Data Scientist </h4></strong>"),
