@@ -179,9 +179,7 @@ I truly believe one should be passionate about what they are working on, it help
             
          
             HTML("<b>Web presence :</b>"),
-            HTML("<a href ='https://facebook.com/shahronak47'>
-                 <img src='facebook.png',  height = 50, width = 50></img></a>
-                  <a href ='https://twitter.com/shahronak47'>
+            HTML("<a href ='https://twitter.com/shahronak47'>
                  <img src='twitter.png',  height = 50, width = 50></img></a>
                  <a href ='https://in.linkedin.com/in/shahronak47'>
                  <img src='LinkedIn_logo_initials.png',  height = 50, width = 50></img></a>
