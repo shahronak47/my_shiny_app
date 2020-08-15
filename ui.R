@@ -46,16 +46,17 @@ I truly believe one should be passionate about what they are working on, it help
                             br(),
                             HTML("&ensp;&ensp;&ensp;"),
                             htmlOutput("answer_so_links"), width = 6
-                            ),
-                            #Display Quora answers
-                            sidebarPanel(
-                            HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
-                                 <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
-                                 <font size = '4'><b>Recent Quora Answers</b></font>"),
-                            br(),
-                            HTML("&ensp;&ensp;&ensp;"),
-                            htmlOutput("answer_quora_links"), width = 6
-                            ))
+                            )
+                            # #Display Quora answers
+                            # sidebarPanel(
+                            # HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
+                            #      <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
+                            #      <font size = '4'><b>Recent Quora Answers</b></font>"),
+                            # br(),
+                            # HTML("&ensp;&ensp;&ensp;"),
+                            # htmlOutput("answer_quora_links"), width = 6
+                            # )
+                            )
                           )
                           
     ),

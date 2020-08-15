@@ -17,29 +17,29 @@ shinyServer(function(input, output) {
     HTML(c("<ul>",paste0("<li><a href= ", answer_url_links, ">", questions_df$title, "</a></li>"), "</ul>"))
   })
   
-  #Add quora link to extract recent answers
-  quora_link <- "https://www.quora.com/profile/Ronak-Shah-96"
-  
-  #Get URLs for recent answers
-  quora_answer_URLs <- quora_link %>%
-          read_html() %>% 
-          html_nodes(xpath = '//*[@class="answer_permalink"]') %>% 
-          html_attr("href") %>%
-          paste0("https://www.quora.com", .) %>%
-          head()
-  
-  
-  #Get text for questions
-  quora_question_text <- quora_link %>%
-    read_html() %>% 
-    html_nodes(xpath = '//*[@class="question_link"]') %>% 
-    html_text() %>%
-    head()
-  
-  output$answer_quora_links <- renderUI({
-    HTML(c("<ul>",paste0("<li><a href= ", quora_answer_URLs, ">", quora_question_text, "</a></li>"), "</ul>"))
-  })
-  
+  # #Add quora link to extract recent answers
+  # quora_link <- "https://www.quora.com/profile/Ronak-Shah-96"
+  # 
+  # #Get URLs for recent answers
+  # quora_answer_URLs <- quora_link %>%
+  #         read_html() %>% 
+  #         html_nodes(xpath = '//*[@class="answer_permalink"]') %>% 
+  #         html_attr("href") %>%
+  #         paste0("https://www.quora.com", .) %>%
+  #         head()
+  # 
+  # 
+  # #Get text for questions
+  # quora_question_text <- quora_link %>%
+  #   read_html() %>% 
+  #   html_nodes(xpath = '//*[@class="question_link"]') %>% 
+  #   html_text() %>%
+  #   head()
+  # 
+  # output$answer_quora_links <- renderUI({
+  #   HTML(c("<ul>",paste0("<li><a href= ", quora_answer_URLs, ">", quora_question_text, "</a></li>"), "</ul>"))
+  # })
+  # 
   #Get wordpress blog link
   wordpress_link <- "https://shahronak47.wordpress.com/blog/"
   
