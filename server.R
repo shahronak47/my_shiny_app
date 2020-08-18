@@ -85,4 +85,12 @@ shinyServer(function(input, output) {
     HTML(c("<ul>",paste0("<li><a href= ", tumblr_url, ">", tumblr_title, "</a></li>"), "</ul>"))
   })
   
+  ntext <- eventReactive(input$SendButton, {
+    input$n
+  })
+  
+  output$nText <- renderText({
+    ntext()
+  })
+  
 })
