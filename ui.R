@@ -26,10 +26,11 @@ body <- dashboardBody(
                           #Employment Details
                           mainPanel(
                             div(style="text-align:center;",
-                                img(src = "Ronak.jpg",  height = 200, width = 150)), 
+                                img(src = "Ronak1.png",  height = 250, width = 250)), 
                             br() ,br(),
-                            HTML("<div style='text-align: justify;text-align-last: center;', <p>Hi, My name is Ronak. I am from Pune, India. I enjoy coding especially in R. I am currently working as freelancer and I’m always looking for cool #rstats project to be part of. I have answered more than 8000 questions on stack overflow. 
-
+                            HTML("<div style='text-align: justify;text-align-last: center;font-size:18px;', <p>Hi, My name is Ronak. I am from Pune, India. I enjoy coding especially in R. 
+<br/> I am currently working as freelancer and I’m always looking for cool #rstats project to be part of. 
+<br/> I have answered more than 8000 questions on stack overflow. 
                                  <br/><br/>I’m married and my hobbies include gardening, listening to podcasts and reading books.
                                  </p></div>"),
                             
