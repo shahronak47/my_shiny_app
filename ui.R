@@ -49,8 +49,16 @@ body <- dashboardBody(
                             HTML("&ensp;&ensp;&ensp;"),
                             htmlOutput("answer_so_links"), width = 6
                             ), 
+                            
+                            #Buy me a coffee widget
                             sidebarPanel(
                               HTML('<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 8px !important;border: 1px solid transparent !important;font-size: 18px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:"Arial", cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/shahronak47"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:18px !important;">Buy me a coffee</span></a>')
+                            ), 
+                            br(),br(),br(),br(),br(),br(),
+                            #Freshgrads link
+                            sidebarPanel(
+                            HTML("<font size = '4'><b> Featured on FreshGrads.info</b></font><br/><br/>
+                                 <a href = 'https://www.freshgrads.info/post/meet-ronak-shah-who-reached-1m-people-on-stack-overflow/'>Meet Ronak Shah who reached 1 million people on Stack Overflow</a>")
                             )
                             # #Display Quora answers
                             # sidebarPanel(
