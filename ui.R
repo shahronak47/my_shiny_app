@@ -1,4 +1,5 @@
 library(shinydashboard)
+library(dashboardthemes)
 
 sidebar <- dashboardSidebar(
   sidebarMenu(
@@ -11,6 +12,11 @@ sidebar <- dashboardSidebar(
 )
 
 body <- dashboardBody(
+  
+  shinyDashboardThemes(
+    theme = "poor_mans_flatly"
+  ),
+  
   tabItems(
     tabItem(tabName = "aboutme",
             
@@ -212,25 +218,11 @@ body <- dashboardBody(
                   <a href ='http://shahronak47.tumblr.com/'>
                  <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
                  "),
-              br(), br()
-            
+              br(), br(),
+              br(), br(),
             
             #Add contact me form
-          #   withTags(
-          #     div(
-          #       h5(b("Email  *")), 
-          #       textarea(style = "width: 250px; height: 50px")
-          #     )
-          #   ), 
-          #   
-          #   withTags(
-          #     div(
-          #       h5(b("Message")), 
-          #       textarea(style = "width: 600px; height: 234px")
-          #     )
-          #   ),
-          #   
-          # actionButton("SendButton", "Send", width = "100px")
+            HTML('<font size = 5><b><a href = "https://forms.gle/XcVoWwuVmc4rPspB8">CONTACT ME!</a></b></font>')
 
     )
   )
