@@ -66,15 +66,6 @@ body <- dashboardBody(
                             HTML("<font size = '4'><b> Featured on FreshGrads.info</b></font><br/><br/>
                                  <a href = 'https://www.freshgrads.info/post/meet-ronak-shah-who-reached-1m-people-on-stack-overflow/'>Meet Ronak Shah who reached 1 million people on Stack Overflow</a>"), 
                             width = 6)
-                            # #Display Quora answers
-                            # sidebarPanel(
-                            # HTML("<a href ='https://www.quora.com/profile/Ronak-Shah-96'>
-                            #      <img src='quora_icon.png',  height = 50, width = 50></img></a> &ensp;
-                            #      <font size = '4'><b>Recent Quora Answers</b></font>"),
-                            # br(),
-                            # HTML("&ensp;&ensp;&ensp;"),
-                            # htmlOutput("answer_quora_links"), width = 6
-                            # )
                             )
                           )
                           
