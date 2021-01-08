@@ -88,10 +88,9 @@ shinyServer(function(input, output) {
   #Video tab
   #Render FAQ
   output$video_faq <- renderFaq({
-    faq(read.csv('youtube_video_list.csv'), faqtitle = "Video List")
+    faq(read.csv('https://raw.githubusercontent.com/shahronak47/my_shiny_app/master/youtube_video_list.csv'), faqtitle = "Video List")
   })
 })
-
 
 
 

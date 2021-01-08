@@ -209,14 +209,16 @@ body <- dashboardBody(
                   <a href ='http://shahronak47.tumblr.com/'>
                  <img src='tumblr-logo.png',  height = 50, width = 50></img></a>
                  "),
-              br(), br(),
-              br(), br(),
+                HTML("&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"),
+              
+              #br(), br(),
+              #br(), br(),
             
             #Add contact me form
             HTML('<font size = 5><b><a href = "https://forms.gle/XcVoWwuVmc4rPspB8">CONTACT ME!</a></b></font>')
 
     ), 
-    #Videos
+    #Youtube Videos
     tabItem(tabName = "videos",
       faqOutput('video_faq')
     )
