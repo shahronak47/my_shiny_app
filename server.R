@@ -3,6 +3,8 @@ library(rvest)
 library(dplyr)
 library(xml2)
 library(XML)
+library(httr)
+library(faq)
 
 shinyServer(function(input, output) {
   #Get top 30 (1 page) answers of user 3962914 (me)
@@ -79,18 +81,24 @@ shinyServer(function(input, output) {
     html_attr("href") %>%
     head()
   
-  
-  
   output$answer_tumblr_links <- renderUI({
     HTML(c("<ul>",paste0("<li><a href= ", tumblr_url, ">", tumblr_title, "</a></li>"), "</ul>"))
   })
   
-  ntext <- eventReactive(input$SendButton, {
-    input$n
+  #Video tab
+  #Render FAQ
+  output$video_faq <- renderFaq({
+    faq(read.csv('youtube_video_list.csv'), faqtitle = "Video List")
   })
-  
-  output$nText <- renderText({
-    ntext()
-  })
-  
 })
+
+
+
+
+
+#To update video
+#data <- GET("https://www.googleapis.com/youtube/v3/search?key={API_key}&channelId=UCv3be7W260HXd2BoK9KihMQ&part=snippet,id&order=date&maxResults=30")
+#tmp <- content(data)
+#results <- do.call(rbind, lapply(tmp$items, function(x) if(x$id$kind == "youtube#video") data.frame(question = x$snippet$title,answer = x$id$videoId)))
+#results$answer <- sprintf('<iframe width="560" height="315" src="https://www.youtube.com/embed/%s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', results$answer)
+#write.csv(results, 'youtube_video_list.csv', row.names = FALSE)

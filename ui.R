@@ -7,12 +7,12 @@ sidebar <- dashboardSidebar(
     menuItem("Side Projects", icon = icon("code"), tabName = "SideProjects"),
     menuItem("Employment and Education", icon = icon("file"), tabName = "EmploymentandEducation"),
     menuItem("Other Projects", icon = icon("umbrella"), tabName = "OtherProjects"),
-    menuItem("Contact Me", icon = icon("phone"), tabName = "ContactMe")
+    menuItem("Contact Me", icon = icon("phone"), tabName = "ContactMe"), 
+    menuItem("Videos", icon = icon("youtube"), tabName = "videos")
   )
 )
 
 body <- dashboardBody(
-  
   shinyDashboardThemes(
     theme = "poor_mans_flatly"
   ),
@@ -215,6 +215,10 @@ body <- dashboardBody(
             #Add contact me form
             HTML('<font size = 5><b><a href = "https://forms.gle/XcVoWwuVmc4rPspB8">CONTACT ME!</a></b></font>')
 
+    ), 
+    #Videos
+    tabItem(tabName = "videos",
+      faqOutput('video_faq')
     )
   )
 )
